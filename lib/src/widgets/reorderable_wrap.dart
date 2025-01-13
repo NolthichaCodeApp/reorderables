@@ -766,12 +766,7 @@ class _ReorderableWrapContentState extends State<_ReorderableWrapContent>
       //
       // We also apply the relevant custom accessibility actions for moving the item
       // up, down, to the start, and to the end of the list.
-      return MergeSemantics(
-        child: Semantics(
-          customSemanticsActions: semanticsActions,
-          child: toWrap,
-        ),
-      );
+      return toWrap;
 //      return KeyedSubtree(
 //        key: keyIndexGlobalKey,
 //        child: MergeSemantics(
